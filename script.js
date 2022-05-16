@@ -6,20 +6,16 @@ function hora() {
 
     relogioTela.innerHTML = data;
 
-    let horadia = data.split("");
-
-    const agora = horadia[1];
-
+    //let horadia = data.split("");
+    
+   const agora = new Date().getHours();
     if (agora < 12) {
-
-      console.log("Bom dia")
-      //document.body.style.backgroundColor = "red";
+      document.getElementById("img").src="img/bom.jpg";
+      document.getElementById("img").alt = "Bom Dia";
 
     } else {
-
-      console.log("Boa Tarde")
-      //document.body.style.backgroundColor = "white";
-
+      document.getElementById("img").src="img/boa.jpg";
+      document.getElementById("img").alt = "Boa Tarde";
     }
 }
 
