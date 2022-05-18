@@ -12,7 +12,6 @@ function hora() {
     if (agora < 12) {
       document.getElementById("img").src="img/bom.jpg";
       document.getElementById("img").alt = "Bom Dia";
-
     } else {
       document.getElementById("img").src="img/boa.jpg";
       document.getElementById("img").alt = "Boa Tarde";
